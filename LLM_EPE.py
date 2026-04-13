@@ -198,8 +198,10 @@ if __name__ == '__main__':
 
     #version = "2024-05-01-preview" #used for gpt-4o mini, 35 turbo, 4o, and 4
     version = "2024-12-01-preview" #used for o3 mini
-   
-    endpoint = os.getenv("ENDPOINT_URL", "https://openai-datascience-tessa-cook-use2.openai.azure.com/")  
+
+    #user defined Microsoft Azure endpoint for connection
+    endpoint_url = "https//My-end-point.com"
+    endpoint = os.getenv("ENDPOINT_URL", endpoint_url)  
     
     # change deployment name as needed
     #model = os.getenv("DEPLOYMENT_NAME", "gpt-4o-mini") 
